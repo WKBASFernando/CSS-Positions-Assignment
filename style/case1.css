@@ -1,0 +1,152 @@
+.box:first-child {
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+
+.box:nth-child(2) {
+    position: absolute;
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+}
+
+.box:nth-child(3) {
+    position: absolute;
+    background-color: orange;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.box:nth-child(4) {
+    position: absolute;
+    background-color: hotpink;
+    width: 50%;
+    height: 50%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.circle {
+    width: 160px;
+    aspect-ratio: 1 /1 ;
+    background-color: white ;
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.smallBox {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.middleBox {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smallCircle {
+    width: 100px;
+    aspect-ratio: 1 /1 ;
+    background-color: red ;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:first-child .cornerCircle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-bottom-right-radius: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+
+.box:nth-child(2) .cornerCircle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+.box:nth-child(3) .cornerCircle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-top-right-radius: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+.box:nth-child(4) .cornerCircle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 100%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.small-corner-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+}
+
+.box:first-child .small-corner-circle {
+    border-bottom-left-radius: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+.box:nth-child(2) .small-corner-circle {
+    border-bottom-right-radius: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.box:nth-child(3) .small-corner-circle {
+    border-top-left-radius: 100%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.box:nth-child(4) .small-corner-circle {
+    border-top-right-radius: 100%;
+    bottom: 0px;
+    left: 0px;
+}

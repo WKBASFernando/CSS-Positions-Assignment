@@ -1,0 +1,100 @@
+/* Reset styles */
+body {
+    margin: 0;
+    height: 200vh; /* Make content scrollable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* Fixed Container for Borders */
+.fixed-container {
+    position: fixed;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Outer Gray Border */
+.outer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid gray; /* Thick ring */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+/* Middle Red Border */
+.middle-circle {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    border: 15px solid red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+/* Scrollable Inner Circles */
+.scroll-container {
+    position: absolute;
+    margin-top: 726px; /* Push it down so it starts within the fixed circle */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 400px; /* Space between circles */
+}
+
+/* Inner Circles */
+.inner-circle:first-child {
+    width: 185px;
+    height: 185px;
+    background-color: purple;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inner-circle:nth-child(2) {
+    width: 185px;
+    height: 185px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inner-circle:last-child {
+    width: 185px;
+    height: 185px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 259px;
+}

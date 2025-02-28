@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+section {
+    position: relative;
+    min-height: 100vh;
+    /* margin-top: 200px; Push it down so it starts within the sticky header */
+}
+section:first-child header {
+    position: sticky;
+    width: 100%;
+    background: red;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+section:first-child main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    
+}
